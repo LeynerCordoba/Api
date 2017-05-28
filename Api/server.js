@@ -1,7 +1,7 @@
 'use strict'
 
 var app = require('./app.js'); //[1]
-var port = 8080; //[2]
+var port = process.env.PORT || 8080; //[2]
 
 app.listen(port, function(){ //[3]
 	console.log("Api arriba en port: localhost:"+port); //[4]
